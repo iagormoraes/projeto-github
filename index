@@ -1,0 +1,75 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>KingShoes - Vendedor</title>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/foundation.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="../img/favcon.png"/>
+    <script src="../js/vendor/modernizr.js"></script>
+  </head>
+  <style>
+/*DROPDOWN DENIFIÇÃO*/
+    .top-bar.expanded {
+      height: 191px;
+      transition: height 300ms ease;
+    }
+  </style>
+  <body>
+<!--INICIO DO MENU-->
+    <div class="sticky">
+      <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: [medium,small]; scrolltop: false;">
+        <ul class="title-area">
+          <li class="name">
+            <div class="mini-logo"></div>
+          </li>
+           <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+          <li class="toggle-topbar">
+            <a href="#"><span>Menu<i class="fa fa-navicon fa-lg"></i></span></a>
+          </li>
+        </ul>
+
+        <section class="top-bar-section">
+          <!-- Right Nav Section -->
+          <ul class="right">
+            <li><a href="pesquisar-cliente.html"><i class="fa fa-shopping-cart"></i>Vender</a></li>
+            <li><a href="editar-cliente.html"><i class="fa fa-user"></i>Editar Cliente</a></li>
+            <li><a href="#" data-reveal-id="logout-modal"><i class="fa fa-sign-out"></i>Sair</a></li>
+          </ul>
+      </nav>
+    </div> 
+<!--FIM DO MENU-->
+<!--CORPO DO SISTEMA-->
+<!--MODAL DE LOGOUT-->
+      <div id="logout-modal" class="reveal-modal small" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+        <h3 id="modalTitle">Você realmente deseja sair?</h3><hr><br><br>
+        <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        <div class="row">
+          <div class="large-5 columns">
+            <a href="../login.html" class="button success radius btn-form space">SIM</a>
+          </div>
+          <div class="large-2 columns">
+          </div>
+          <div class="large-5 columns">
+            <a href="#" class="button alert radius btn-form space" data-reveal-id="logout-modal">NÃO</a>
+          </div>
+        </div>
+      </div>
+<!--FIM DO MODAL-->
+    <div class="row">
+      <div class="large-7 medium-7 medium-centered columns welcome">
+        <p><strong>BEM-VINDO</strong></p>
+        <i class=" fa fa-user fa-4x"></i>
+        <h4>USUÁRIO - MATRÍCULA:129309</h4>
+      </div>
+    </div>
+    <script src="../js/vendor/jquery.js"></script>
+    <script src="../js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();   
+    </script>
+  </body>
+</html>
